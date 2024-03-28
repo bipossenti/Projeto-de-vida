@@ -38,29 +38,32 @@ body {
 }
 
 .botao {
-    font-family: "Caveat", cursive;
+    font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
     justify-content: center;
     padding: 1em;
-    font-size: 20px;
+    font-size:20px;
     align-items: center;
     width: 100%;
-border-bottom: 4px solid var(--botao-ativo); 
-border-left: 2px solid var(--botao-ativo); 
-border-right: 2px solid var(--botao-ativo); 
-border-top: none;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 
-.botao:first-child{
+.botao:first-child {
     border-radius: 40px 40px 0 0;
 }
 
+.botoes {
+    display: block;
+}
 
 .botao.ativo{
     background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--vermelho)
+    border-bottom: 4px solid var(--vermelho);
 }
 
 .abas-textos{
@@ -77,23 +80,22 @@ border-top: none;
 }
 
 .aba-conteudo-titulo-principal{
-    font-size: 28px;
+    font-size: 30px;
     text-align: center;
 }
-
 .aba-conteudo-titulo-secundario{
     text-align: center;
-    color: var(--vermelho);
+    color: var(--vermelho );
     text-transform: uppercase;
 }
 
 .contador{
-    display: flex;
+    display:flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .contador-digito{
-    padding: 0 16px;
+    padding: 0 18px;
     text-align: center;
     min-width: 100px;
 }
@@ -101,11 +103,14 @@ border-top: none;
 .contador-digito-numero{
     font-size: 80px;
     margin: 0;
+
 }
+
 .contador-digito-texto{
-    color: var(--vermelho);
+    color: var( --vermelho);
     font-size: 20px;
     margin: 0;
+
 }
 
 @media screen and (min-width: 768px) {
@@ -116,6 +121,11 @@ border-top: none;
     .botao:first-child {
         border-radius: 40px 0 0 0;
     }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
 
     .botao:last-child {
         border-radius: 0 40px 0 0;
